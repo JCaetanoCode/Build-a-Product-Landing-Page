@@ -12,7 +12,7 @@
             background-color: rgb(248, 235, 222);
         }
         header {
-            background-color: rgb(175, 152, 88);
+            background-color: rgb(255, 85, 6);
             display: flex;
             justify-content: space-around;
             /* aplica um espaço entre os items */
@@ -35,9 +35,13 @@
         .logo-imagem {
             width: auto;
             height: auto;
-            background-color: white;
             border-radius: 25px;
             /* aredonda os items no valor "pixels" */
+        }
+        .logo-imagem img{
+            margin-top: 25px;
+            width: 100px;
+            height: 130px;
         }
 
         .logo-texto {
@@ -95,6 +99,7 @@
 
         #Box1 {
             position: absolute;
+            top: 40%;
             left: 34%;
             width: 283px;
             height: 93px;
@@ -119,8 +124,24 @@
         }
         #img_cox{
             position: absolute;
-            top: 40%;
+            top: 60%;
             left: 29%;
+        }
+        #text1{
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            text-align: center;
+            color: black;
+            font-size: 28px;
+        }
+        #text2{
+            position: absolute;
+            top: 28%;
+            left: 10%;
+            text-align: center;
+            color: black;
+            font-size: 22px;
         }
     </style>
 
@@ -129,9 +150,9 @@
 <body>
     <header>
         <div class="container-logo">
-            <div class="logo-imagem"><img src="imagem/starbucks3.png" alt="logo"></div>
+            <div class="logo-imagem"><img src="imagem/logo_qfome.png" alt="logo"></div>
             <div class="logo-texto"></div>
-            <h1>Meu Titulo</h1>
+            <h1>Q-Fome</h1>
         </div>
         <div class="menu">
             <ul>
@@ -151,7 +172,11 @@
             <input type="submit" id="Button1" name="" value="Send">
         </form>
     </div>
-
+<article>
+<p id="text1">Fabricando coxinha todos os dias para atender nossos clientes.</p>
+<p id="text2">Campeã do Prêmio Gourmet deste ano as coxinhas "Q-fome" são produzidas diariamente e distribuídas nas unidades da rede.
+</p>
+</article>
 <div id="img_cox">
     <img src="imagem/coxinha.jpg">
 </div>

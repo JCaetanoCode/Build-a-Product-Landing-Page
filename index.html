@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+
+    <style>
+        body{
+            background-color: rgb(248, 235, 222);
+        }
+        header {
+            background-color: rgb(175, 152, 88);
+            display: flex;
+            justify-content: space-around;
+            /* aplica um espaço entre os items */
+            align-items: center;
+            /* centraliza os items */
+            padding: 20px 0;
+            margin-top: 20px;
+            /* aplica um espaço em cima/baixo no cabeçario */
+            height: 35px;
+        }
+
+        .container-logo {
+            display: flex;
+            /* alinha os items lado-lado */
+            align-items: center;
+            /* centraliza os items */
+
+        }
+
+        .logo-imagem {
+            width: auto;
+            height: auto;
+            background-color: white;
+            border-radius: 25px;
+            /* aredonda os items no valor "pixels" */
+        }
+
+        .logo-texto {
+            margin-left: 20px;
+        }
+
+        .menu li {
+            display: inline-block;
+            /* organiza o menu lado-lado */
+            margin: 0 10px;
+        }
+
+        .menu li a {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            /* texto em maiusculo */
+            padding: 4px 3px;
+            /* area de contato do mouse */
+
+        }
+
+        .menu li a:hover {
+            background-color: #14a7d8;
+            /* cor do menu sob o mouse */
+            border-radius: 6px;
+            /* borda aredondada */
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .artigo {
+            color: blanchedalmond;
+            width: 50%;
+            height: 100%;
+            background-color: #151616;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+        }
+
+        form {
+            margin-left: 38%;
+            margin-top: 6%;
+        }
+
+        input {
+            width: 300px;
+            height: 22px;
+        }
+
+        #Box1 {
+            position: absolute;
+            left: 34%;
+            width: 283px;
+            height: 93px;
+        }
+
+        #input_email {
+            position: absolute;
+            left: 91px;
+            top: 45px;
+            width: 249px;
+            height: 18px;
+            z-index: 14;
+        }
+
+        #Button1 {
+            position: absolute;
+            left: 170px;
+            top: 72px;
+            width: 96px;
+            height: 25px;
+            z-index: 15;
+        }
+        #img_cox{
+            position: absolute;
+            top: 40%;
+            left: 29%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-logo">
+            <div class="logo-imagem"><img src="imagem/starbucks3.png" alt="logo"></div>
+            <div class="logo-texto"></div>
+            <h1>Meu Titulo</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Loja</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+
+    <div id="Box1">
+        <form name="contact" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data"
+            id="Form1">
+            <input type="hidden" name="formid" value="form1">
+            <input type="text" id="input_email" name="email" value="" spellcheck="false" placeholder="enter your email address">
+            <input type="submit" id="Button1" name="" value="Send">
+        </form>
+    </div>
+
+<div id="img_cox">
+    <img src="imagem/coxinha.jpg">
+</div>
+</body>
+
+</html>

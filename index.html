@@ -8,9 +8,11 @@
     <title>Product Landing Page</title>
 
     <style>
-        body{
-            background-color: rgb(248, 235, 222);
+
+        body {
+            background-color: rgb(253, 253, 253);
         }
+
         header {
             background-color: rgb(255, 85, 6);
             display: flex;
@@ -22,6 +24,25 @@
             margin-top: 20px;
             /* aplica um espaço em cima/baixo no cabeçario */
             height: 35px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            margin-left: 38%;
+            margin-top: 6%;
+        }
+
+        input {
+            width: 300px;
+            height: 22px;
+        }
+
+        img {
+            width: 240px;
+            height: 200px;
         }
 
         .container-logo {
@@ -38,7 +59,8 @@
             border-radius: 25px;
             /* aredonda os items no valor "pixels" */
         }
-        .logo-imagem img{
+
+        .logo-imagem img {
             margin-top: 25px;
             width: 100px;
             height: 130px;
@@ -62,18 +84,13 @@
             /* texto em maiusculo */
             padding: 4px 3px;
             /* area de contato do mouse */
-
         }
 
         .menu li a:hover {
-            background-color: #14a7d8;
+            background-color: #a5132b;
             /* cor do menu sob o mouse */
             border-radius: 6px;
             /* borda aredondada */
-        }
-
-        h1 {
-            color: white;
         }
 
         .artigo {
@@ -85,16 +102,6 @@
             padding: 10px;
             text-align: left;
             align-items: center;
-        }
-
-        form {
-            margin-left: 38%;
-            margin-top: 6%;
-        }
-
-        input {
-            width: 300px;
-            height: 22px;
         }
 
         #Box1 {
@@ -122,27 +129,44 @@
             height: 25px;
             z-index: 15;
         }
-        #img_cox{
-            position: absolute;
-            top: 60%;
-            left: 29%;
-        }
-        #text1{
-            position: absolute;
-            top: 20%;
-            left: 25%;
-            text-align: center;
+
+        #text1 {
+            display: flex;
+            justify-content: center;
             color: black;
             font-size: 28px;
         }
-        #text2{
-            position: absolute;
-            top: 28%;
-            left: 10%;
-            text-align: center;
+
+        #text2 {
+            display: flex;
+            justify-content: center;
             color: black;
             font-size: 22px;
         }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #img_coxinha {}
+
+        #img_cento {}
+
+        #copo_coxinha {}
+
+        #mini_chu {}
+
+        #nuggets {}
+
+        #img_bebidas {}
+
     </style>
 
 </head>
@@ -168,18 +192,46 @@
         <form name="contact" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data"
             id="Form1">
             <input type="hidden" name="formid" value="form1">
-            <input type="text" id="input_email" name="email" value="" spellcheck="false" placeholder="enter your email address">
-            <input type="submit" id="Button1" name="" value="Send">
+            <input type="text" id="input_email" name="email" value="" spellcheck="false"
+                placeholder="coloque seu email aqui">
+            <input type="submit" id="Button1" name="" value="Enviar">
         </form>
     </div>
-<article>
-<p id="text1">Fabricando coxinha todos os dias para atender nossos clientes.</p>
-<p id="text2">Campeã do Prêmio Gourmet deste ano as coxinhas "Q-fome" são produzidas diariamente e distribuídas nas unidades da rede.
-</p>
-</article>
-<div id="img_cox">
-    <img src="imagem/coxinha.jpg">
-</div>
+    <article>
+        <p id="text1">Fabricando coxinha todos os dias para atender nossos clientes.</p>
+        <p id="text2">Campeã do Prêmio Gourmet deste ano as coxinhas "Q-fome" são produzidas diariamente e distribuídas
+            nas unidades da rede.
+        </p>
+    </article>
+
+    <div id="container">
+        <div id="img_coxinha">
+            <img src="imagem/coxinha.jpg">
+        </div>
+
+        <div id="img_cento">
+            <img src="imagem/cento.jpg">
+        </div>
+
+        <div id="img_copo_coxinha">
+            <img src="imagem/copo_coxinha.jpg">
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="img_mini_chu">
+            <img src="imagem/mini_chu.jpg">
+        </div>
+
+        <div id="img_nuggets">
+            <img src="imagem/nuggets.jpg">
+        </div>
+
+        <div id="img_bebidas">
+            <img src="imagem/bebidas.jpg">
+        </div>
+    </div>
+
 </body>
 
 </html>

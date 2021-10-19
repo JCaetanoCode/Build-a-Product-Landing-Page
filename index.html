@@ -8,246 +8,86 @@
     <title>Product Landing Page</title>
 
     <style>
-        body {
-            background-color: rgb(253, 253, 253);
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgb(105, 3, 3);
         }
 
-        header {
-            background-color: rgb(255, 85, 6);
+        ul {
             display: flex;
             justify-content: space-around;
-            /* aplica um espaço entre os items */
+            /*alinhamento horizontal*/
             align-items: center;
-            /* centraliza os items */
-            padding: 20px 0;
-            margin-top: 20px;
-            /* aplica um espaço em cima/baixo no cabeçario */
-            height: 35px;
+            /*alinhamento vertical*/
+            width: 45%;
+            height: 80px;
         }
 
-        footer {
-            background-color: rgb(255, 85, 6);
-            width: 80%;
-            border-radius: 5px;
-            
-        }
-        #footer{
+        p {
             display: flex;
-            justify-content: center;
-        }
-
-        h1 {
+            justify-content: flex-start;
+            align-items: center;
+            width: 50%;
+            font-size: 26px;
             color: white;
         }
 
-        form {
-            margin-left: 38%;
-            margin-top: 6%;
-        }
-
-        input {
-            width: 300px;
-            height: 22px;
-        }
-
-        img {
-            width: 240px;
-            height: 200px;
-            border-radius: 5px;
-        }
-
-        .container-logo {
-            display: flex;
-            /* alinha os items lado-lado */
-            align-items: center;
-            /* centraliza os items */
-
-        }
-
-        .logo-imagem {
-            width: auto;
-            height: auto;
-            border-radius: 25px;
-            /* aredonda os items no valor "pixels" */
-        }
-
-        .logo-imagem img {
-            margin-top: 25px;
-            width: 100px;
-            height: 130px;
-        }
-
-        .logo-texto {
-            margin-left: 20px;
-        }
-
-        .menu li {
-            display: inline-block;
-            /* organiza o menu lado-lado */
-            margin: 0 10px;
-        }
-
-        .menu li a {
-            font-size: 24px;
+        a {
             text-decoration: none;
             color: white;
             text-transform: uppercase;
-            /* texto em maiusculo */
-            padding: 4px 3px;
-            /* area de contato do mouse */
         }
 
-        .menu li a:hover {
-            background-color: #a5132b;
-            /* cor do menu sob o mouse */
-            border-radius: 6px;
-            /* borda aredondada */
+        a:hover {
+            background-color: rgb(250, 75, 75);
+            border-radius: 4px;
+        }
+        img{
+            width: 90px;
+            height: 100px;
+            padding-left: 10px;
+            
         }
 
-        .artigo {
-            color: blanchedalmond;
-            width: 50%;
-            height: 100%;
-            background-color: #151616;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: left;
-            align-items: center;
+        .home {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
         }
 
-        #Box1 {
-            position: absolute;
-            top: 40%;
-            left: 34%;
-            width: 283px;
-            height: 93px;
+        .loja {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
         }
 
-        #input_email {
-            position: absolute;
-            left: 91px;
-            top: 45px;
-            width: 249px;
-            height: 18px;
-            z-index: 14;
+        .itens {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
         }
 
-        #Button1 {
-            position: absolute;
-            left: 170px;
-            top: 72px;
-            width: 96px;
-            height: 25px;
-            z-index: 15;
+        .sobre {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
         }
-
-        #text1 {
-            display: flex;
-            justify-content: center;
-            color: black;
-            font-size: 28px;
-        }
-
-        #text2 {
-            display: flex;
-            justify-content: center;
-            color: black;
-            font-size: 22px;
-        }
-
-        #container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 150px;
-        }
-
-        #container {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        #img_coxinha {}
-
-        #img_cento {}
-
-        #copo_coxinha {}
-
-        #mini_chu {}
-
-        #nuggets {}
-
-        #img_bebidas {}
     </style>
-
 </head>
 
 <body>
-    <header>
-        <div class="container-logo">
-            <div class="logo-imagem"><img src="imagem/logo_qfome.png" alt="logo"></div>
-            <div class="logo-texto"></div>
-            <h1>Q-Fome</h1>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Loja</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </div>
-    </header>
-    <br>
-
-    <div id="Box1">
-        <form name="contact" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data"
-            id="Form1">
-            <input type="hidden" name="formid" value="form1">
-            <input type="text" id="input_email" name="email" value="" spellcheck="false"
-                placeholder="coloque seu email aqui">
-            <input type="submit" id="Button1" name="" value="Enviar">
-        </form>
-    </div>
-    <article>
-        <p id="text1">Fabricando coxinha todos os dias para atender nossos clientes.</p>
-        <p id="text2">Campeã do Prêmio Gourmet deste ano as coxinhas "Q-fome" são produzidas diariamente e distribuídas
-            nas unidades da rede.
-        </p>
-    </article>
-
-    <div id="container">
-        <div id="img_coxinha">
-            <img src="imagem/coxinha.jpg">
-        </div>
-
-        <div id="img_cento">
-            <img src="imagem/cento.jpg">
-        </div>
-
-        <div id="img_copo_coxinha">
-            <img src="imagem/copo_coxinha.jpg">
-        </div>
-    </div>
-
-    <div id="container">
-        <div id="img_mini_chu">
-            <img src="imagem/mini_chu.jpg">
-        </div>
-
-        <div id="img_nuggets">
-            <img src="imagem/nuggets.jpg">
-        </div>
-
-        <div id="img_bebidas">
-            <img src="imagem/bebidas.jpg">
-        </div>
-    </div>
+    <nav class="container">
+        <p><img src="imagem/logo_qfome.png"></p>
+        <p>Minha Loja na Internet</p>
+        <ul>
+            <a href="#" class="home">HOME</a>
+            <a href="#" class="loja">LOJA</a>
+            <a href="#" class="itens">ITENS</a>
+            <a href="#" class="sobre">SOBRE</a>
+        </ul>
+    </nav>
 
 </body>
-&nbsp;
-<div id="footer">
-    <footer>
-        <h2>Rodapé</h2>
-    </footer>
-</div>
 
 </html>

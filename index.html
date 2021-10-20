@@ -5,88 +5,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
+    <title>My Shirt</title>
 
     <style>
-        .container {
-            display: flex;
-            justify-content: flex-end;
-            background-color: rgb(105, 3, 3);
+        body {
+            margin: 0px;
+            padding: 0px;
         }
 
-        ul {
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        header img {
+            width: 250px;
+            height: 90px;
+            padding-left: 10px;
+
+        }
+
+        .menu-header nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 50px;
+            border-color: black;
+            border: 1px solid #00000052;
+
+        }
+
+        .menu-header ul {
             display: flex;
             justify-content: space-around;
-            /*alinhamento horizontal*/
             align-items: center;
-            /*alinhamento vertical*/
             width: 45%;
             height: 80px;
         }
 
-        p {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 50%;
-            font-size: 26px;
-            color: white;
-        }
-
-        a {
+        .menu-header a {
             text-decoration: none;
-            color: white;
+            color: black;
             text-transform: uppercase;
         }
 
         a:hover {
-            background-color: rgb(250, 75, 75);
+            background-color: rgb(245, 225, 160);
             border-radius: 4px;
         }
-        img{
-            width: 90px;
-            height: 100px;
-            padding-left: 10px;
+
+        .fundo {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5%;
+            width: auto;
+            height: auto;
+        }
+
+        .left {
+            width: 30%;
+            height: auto;
+
+        }
+
+        .right {
+            width: 30%;
+            height: auto;
+
+        }
+
+        .right img {
+            width: 240px;
+            height: 240px;
+        }
+
+        .artigos{
+            background-color: cadetblue;
+            width: 250px;
+            height: auto;
+        }
+
+        .t-shirt {
+            background-color: transparent;
+            width: 240px;
+        }
+
+        .t-shirt img {
+            width: 240px;
+        }
+
+        .t-shirt h2 {
+            text-align: center;
+        }
+
+        footer div {
+            width: auto;
+            height: 70px;
+            border-color: black;
+            border: 1px solid #00000052;
+            margin-bottom: 8px;
+            font-family: monospace;
             
         }
 
-        .home {
-            color: white;
+        footer a {
+            font-size: 14px;
+            font-family: monospace;
+            color: black;
             text-decoration: none;
-            font-size: 16px;
+            padding: 10px;
         }
-
-        .loja {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .itens {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .sobre {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
+        footer p{
+            margin-left: 22px;
+            color: rgba(0, 0, 0, 0.678);
         }
     </style>
 </head>
 
 <body>
-    <nav class="container">
-        <p><img src="imagem/logo_qfome.png"></p>
-        <p>Minha Loja na Internet</p>
-        <ul>
-            <a href="#" class="home">HOME</a>
-            <a href="#" class="loja">LOJA</a>
-            <a href="#" class="itens">ITENS</a>
-            <a href="#" class="sobre">SOBRE</a>
-        </ul>
-    </nav>
+
+    <header>
+        <img src="image/myshirt.png" alt="logo my shirt">
+    </header>
+
+    <div class="menu-header">
+        <nav>
+            <ul>
+                <a href="#">HOME</a>
+                <a href="#">LOJA</a>
+                <a href="#">ITENS</a>
+                <a href="#">SOBRE</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="fundo">
+
+        <div class="artigos">
+            artigos
+        </div>
+
+        <div class="left">
+            <div class="t-shirt">
+                <img src="image/tshirt-black.png" alt="t shirt black"><br>
+                <h2>T-Shirt Black</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-blue.png" alt="t shirt blue">
+                <h2>T-Shirt Blue</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-salmon.png" alt="t shirt salmon">
+                <h2>T-Shirt Salmon</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-mustard.png" alt="t shirt mustard">
+                <h2>T-Shirt Mustard</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-red.png" alt="t shirt red">
+                <h2>T-Shirt Red</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-dark-blue.png" alt="t shirt dark blue">
+                <h2>T-Shirt Dark Blue</h2>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="t-shirt">
+                <img src="image/tshirt-green.png" alt="t shirt green">
+                <h2>T-Shirt Green</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-lemon.png" alt="t shirt lemon">
+                <h2>T-Shirt Lemon</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-graphite.png" alt="t shirt graphite">
+                <h2>T-Shirt Graphite</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-violet.png" alt="t shirt violet">
+                <h2>T-Shirt Violet</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-white.png" alt="t shirt white">
+                <h2>T-Shirt White</h2>
+            </div>
+
+            <div class="t-shirt">
+                <img src="image/tshirt-pink.png" alt="t shirt pink">
+                <h2>T-Shirt Pink</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <ul>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </ul>
+            <p>Copyright 2021, Original My Shirts</p>
+        </div>
+        
+    </footer>
 
 </body>
 

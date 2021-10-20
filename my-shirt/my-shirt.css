@@ -1,0 +1,181 @@
+ /*bloco Body*/
+ body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*bloco Body*/
+
+/*bloco header*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header img {
+    width: 250px;
+    height: 90px;
+    padding-left: 10px;
+
+}
+
+.menu-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    border-color: black;
+    border: 1px solid #00000052;
+    background-color: darkolivegreen;
+
+}
+
+.menu-header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 80px;
+}
+
+.menu-header a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+/*bloco header*/
+
+/*bloco Global para os links*/
+a:hover {
+    background-color: rgb(245, 225, 160);
+    border-radius: 4px;
+}
+
+/*bloco Global para os links*/
+
+/*bloco fundo camisas*/
+.fundo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: auto;
+    height: auto;
+}
+
+/*bloco fundo camisas*/
+
+/*bloco camisas left*/
+.left {
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+/*bloco camisas left*/
+
+/*bloco camisas right*/
+.right {
+    width: 30%;
+    height: auto;
+}
+
+/*bloco camisas right*/
+
+/*bloco sidebar*/
+.sidebar {
+    background-color: cadetblue;
+    width: 250px;
+    height: auto;
+    margin-left: 0px;
+}
+
+/*bloco sidebar*/
+
+/*bloco camisas*/
+.ts-black {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-blue {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-salmon {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-red {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-green {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-violet {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-white {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+.ts-pink {
+    background-color: gray;
+    border-color: black;
+    border: 1px solid black;
+    width: 240px;
+}
+
+/*bloco das camisas*/
+
+/*bloco footer*/
+footer div {
+    width: auto;
+    height: 70px;
+    border-color: black;
+    border: 1px solid #00000052;
+    margin-bottom: 8px;
+    font-family: monospace;
+}
+
+footer a {
+    font-size: 14px;
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer p {
+    margin-left: 22px;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+/*bloco footer*/

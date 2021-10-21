@@ -1,8 +1,8 @@
- /*bloco Body*/
+
+/*bloco Body*/
  body {
     margin: 0px;
     padding: 0px;
-
 }
 
 /*bloco Body*/
@@ -12,7 +12,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header img {
@@ -30,7 +29,6 @@ header img {
     height: 50px;
     border-color: black;
     border: 1px solid #00000052;
-    background-color: darkolivegreen;
 
 }
 
@@ -47,7 +45,6 @@ header img {
     color: black;
     text-transform: uppercase;
 }
-
 /*bloco header*/
 
 /*bloco Global para os links*/
@@ -55,7 +52,6 @@ a:hover {
     background-color: rgb(245, 225, 160);
     border-radius: 4px;
 }
-
 /*bloco Global para os links*/
 
 /*bloco fundo camisas*/
@@ -66,93 +62,104 @@ a:hover {
     width: auto;
     height: auto;
 }
-
 /*bloco fundo camisas*/
 
 /*bloco camisas left*/
 .left {
     width: 30%;
     height: auto;
+    padding-bottom: 100px;
     text-align: center;
 }
-
 /*bloco camisas left*/
 
 /*bloco camisas right*/
 .right {
     width: 30%;
     height: auto;
+    padding-bottom: 100px;
+    text-align: center;
 }
-
 /*bloco camisas right*/
 
 /*bloco sidebar*/
 .sidebar {
     background-color: cadetblue;
     width: 250px;
-    height: auto;
+    height: 100%;
     margin-left: 0px;
+    padding-bottom: 100px;
+    
 }
-
 /*bloco sidebar*/
 
 /*bloco camisas*/
 .ts-black {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
+    
 }
 
 .ts-blue {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-salmon {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-red {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-green {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-violet {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-white {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
 .ts-pink {
-    background-color: gray;
     border-color: black;
     border: 1px solid black;
     width: 240px;
+    height: 400px;
 }
 
+.button-comprar{
+width: 150px;
+height: 34px;
+background-color: black;
+color: white;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
 /*bloco das camisas*/
 
 /*bloco footer*/
@@ -177,5 +184,4 @@ footer p {
     margin-left: 22px;
     color: rgba(0, 0, 0, 0.678);
 }
-
 /*bloco footer*/

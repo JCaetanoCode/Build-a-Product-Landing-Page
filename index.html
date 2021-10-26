@@ -13,59 +13,62 @@
 
     <div id="fundo">
 
-        <header>
-            <p><i>My T-Shirt</i></p>
+        <header id="header">
+            <a name="home"><img src="image/myshirt.png" id="header-img"></a>
+
+            <div id="sidebar">
+
+                <nav id="nav-bar">
+                    <ul>
+                        <a href="#home" class="nav-home">HOME</a>
+                        <hr>
+                        <a href="#store" class="nav-store">STORE</a>
+                        <hr>
+                        <a href="#items" class="nav-items">ITEMS</a>
+                        <hr>
+                        <a href="#contact" class="nav-contact">CONTACT</a>
+                        <hr>
+                        <a href="#about" class="nav-about">ABOUT</a>
+                        <hr>
+                    </ul>
+                </nav>
+
+                <div id="video">
+                    <iframe width="260" height="215" src="https://www.youtube.com/embed/BiSYoeqb_VY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="sidebar-text">
+                    <a name="store">
+                        <h1>What is Lorem Ipsum?</h1>
+                    </a>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+
         </header>
 
-        <div id="sidebar">
-            <nav>
-                <ul>
-                    <a href="#">HOME</a>
-                    <hr>
-                    <a href="#">STORE</a>
-                    <hr>
-                    <a href="#">ITEMS</a>
-                    <hr>
-                    <a href="#">CONTACT</a>
-                    <hr>
-                    <a href="#">ABOUT</a>
-                    <hr>
-                </ul>
-            </nav>
-
-            <div id="div-video">
-
-                <iframe width="260" height="215" src="https://www.youtube.com/embed/BiSYoeqb_VY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-            </div>
-            <hr>
-            <div class="sidebar-text">
-                <h1>What is Lorem Ipsum?</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </div>
-
         <div id="content">
-            <div id="Form1">
-                <form name="contact" method="post" action="<?php echo basename(__FILE__); ?>"
-                    enctype="multipart/form-data" id="Form1">
-                    <input type="hidden" name="formid" value="form1">
-                    <label for="Editbox2" id="Label2">Email:</label>
-                    <input type="text" id="Editbox2" name="email" value="" spellcheck="false"
-                        placeholder="digite seu email">
-                    <input type="submit" id="Button1" name="" value="Enviar">
-                </form>
-            </div>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <input type="submit" value="Submit">
+            </form>
 
             <div class="left">
                 <div class="ts-black">
@@ -114,7 +117,7 @@
                 </div>
                 <br>
                 <div class="ts-white">
-                    <img src="image/tshirt-white.png" alt="t shirt white">
+                    <a name="items"><img src="image/tshirt-white.png" alt="t shirt white"></a>
                     <h2>White T-Shirt</h2>
                     <h2>R$99,90</h2>
                     <input class="button-comprar" type="button" value="Comprar">
@@ -138,8 +141,11 @@
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Contact</a>
-        </ul>
-        <p>Copyright 2021, Original Pages My T-Shirt</p>
+            <a name="contact">
+        </ul></a>
+        <a name="about">
+            <p>Copyright 2021, Original Pages My T-Shirt</p>
+        </a>
     </footer>
 
 </body>

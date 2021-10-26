@@ -1,11 +1,10 @@
 
 body {
-    background-color: cadetblue;
     margin: 0px;
     padding: 0px;
 }
 
-header {
+#header {
     background-color: rgb(52, 53, 52);
     position: absolute;
     top: 0px;
@@ -13,12 +12,35 @@ header {
     height: 160px;
 }
 
-header p {
+#header-img {
     position: absolute;
-    left: 18%;
-    color: white;
-    font-size: 36px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 12px;
+    left: 38%;
+}
+
+.nav-home{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-store{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-items{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-contact{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-about{
+    font-family: monospace;
+    font-size: 20px;
 }
 
 footer {
@@ -87,7 +109,7 @@ a:hover {
     background-color: rgb(167, 166, 165);
 }
 
-#div-video {
+#video {
     width: auto;
     height: auto;
 
@@ -99,10 +121,10 @@ a:hover {
 
 }
 
-#Form1 {
+#form {
     position: absolute;
-    top: 5px;
-    left: 63px;
+    top: 20px;
+    left: 140px;
 }
 
 #Editbox2 {
@@ -114,7 +136,7 @@ a:hover {
     z-index: 8;
 }
 
-#Button1 {
+#submit {
     position: absolute;
     left: 63px;
     top: 77px;

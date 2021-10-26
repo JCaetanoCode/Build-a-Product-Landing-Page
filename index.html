@@ -5,112 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Shirt</title>
+    <title>Document</title>
     <link rel="stylesheet" href="my-shirt/my-shirt.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="image/green-black.jpg">
-        <!--img src="image/myshirt.png" alt="logo my shirt"-->
-    </header>
+    <div id="fundo">
 
-    <div class="menu-header">
-        <nav>
-            <ul>
-                <a href="#">HOME</a>
-                <a href="#">LOJA</a>
-                <a href="#">ITENS</a>
-                <a href="#">SOBRE</a>
-            </ul>
-        </nav>
-    </div>
+        <header>
+            <p><i>My T-Shirt</i></p>
+        </header>
 
-    <div class="fundo">
+        <div id="sidebar">
+            <nav>
+                <ul>
+                    <a href="#">HOME</a>
+                    <hr>
+                    <a href="#">STORE</a>
+                    <hr>
+                    <a href="#">ITEMS</a>
+                    <hr>
+                    <a href="#">CONTACT</a>
+                    <hr>
+                    <a href="#">ABOUT</a>
+                    <hr>
+                </ul>
+            </nav>
 
-        <div class="sidebar">
-            <p>Cores</p>
-            <div id="radio-sidebar">
-                <input type="radio" name="choice" value="black"/>Black<br>
-                <input type="radio" name="choice" value="maybe"/>Red<br>
-                <input type="radio" name="choice" value="notsure"/>Green<br>
+            <div id="div-video">
+
+                <iframe width="260" height="215" src="https://www.youtube.com/embed/BiSYoeqb_VY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <hr>
+            <div class="sidebar-text">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="Form1">
+                <form name="contact" method="post" action="<?php echo basename(__FILE__); ?>"
+                    enctype="multipart/form-data" id="Form1">
+                    <input type="hidden" name="formid" value="form1">
+                    <label for="Editbox2" id="Label2">Email:</label>
+                    <input type="text" id="Editbox2" name="email" value="" spellcheck="false"
+                        placeholder="digite seu email">
+                    <input type="submit" id="Button1" name="" value="Enviar">
+                </form>
+            </div>
+
+            <div class="left">
+                <div class="ts-black">
+                    <img src="image/tshirt-black.png" alt="t shirt black"><br>
+                    <h2>Black T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-blue">
+                    <img src="image/tshirt-blue.png" alt="t shirt blue">
+                    <h2>Blue T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-salmon">
+                    <img src="image/tshirt-salmon.png" alt="t shirt salmon">
+                    <h2>Salmon T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-red">
+                    <img src="image/tshirt-red.png" alt="t shirt red">
+                    <h2>Red T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+            </div>
+
+            <div class="right">
+                <div class="ts-green">
+                    <img src="image/tshirt-green.png" alt="t shirt green">
+                    <h2>Green T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-violet">
+                    <img src="image/tshirt-violet.png" alt="t shirt violet">
+                    <h2>Violet T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-white">
+                    <img src="image/tshirt-white.png" alt="t shirt white">
+                    <h2>White T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
+                <div class="ts-pink">
+                    <img src="image/tshirt-pink.png" alt="t shirt pink">
+                    <h2>Pink T-Shirt</h2>
+                    <h2>R$99,90</h2>
+                    <input class="button-comprar" type="button" value="Comprar">
+                </div>
+                <br>
             </div>
 
         </div>
 
-        <div class="left">
-            <div class="ts-black">
-                <img src="image/tshirt-black.png" alt="t shirt black"><br>
-                <h2>T-Shirt Black</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-blue">
-                <img src="image/tshirt-blue.png" alt="t shirt blue">
-                <h2>T-Shirt Blue</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-salmon">
-                <img src="image/tshirt-salmon.png" alt="t shirt salmon">
-                <h2>T-Shirt Salmon</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-red">
-                <img src="image/tshirt-red.png" alt="t shirt red">
-                <h2>T-Shirt Red</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-        </div>
-
-        <div class="right">
-            <div class="ts-green">
-                <img src="image/tshirt-green.png" alt="t shirt green">
-                <h2>T-Shirt Green</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-violet">
-                <img src="image/tshirt-violet.png" alt="t shirt violet">
-                <h2>T-Shirt Violet</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-white">
-                <img src="image/tshirt-white.png" alt="t shirt white">
-                <h2>T-Shirt White</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-            <div class="ts-pink">
-                <img src="image/tshirt-pink.png" alt="t shirt pink">
-                <h2>T-Shirt Pink</h2>
-                <h2>R$99,90</h2>
-                <input class="button-comprar" type="button" value="Comprar">
-            </div>
-            <br>
-        </div>
     </div>
 
     <footer>
-        <div>
-            <ul>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact</a>
-            </ul>
-            <p>Copyright 2021, Original My Shirts</p>
-        </div>
+        <ul>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </ul>
+        <p>Copyright 2021, Original Pages My T-Shirt</p>
     </footer>
 
 </body>
